@@ -1,5 +1,5 @@
+import { } from 'mocha';
 import { RandomFromList } from './list';
-import { } from 'jasmine';
 import { expect } from 'chai';
 
 describe('RandomFromList', () => {
