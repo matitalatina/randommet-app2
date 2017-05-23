@@ -9,10 +9,4 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="rm-particles">
-  <div class="response-wrapper">
-    <div text-center #answerElem class="rm-particles-response">
-      {{choice.value}}
-    </div>
-  </div>
-</ion-content>
+<rm-answer [chosenValue]="choice.value"></rm-answer>

@@ -1,9 +1,10 @@
 import { Choice } from "./models/choice";
 import { RandomFromList } from "./list";
 import { Injectable } from "@angular/core";
+import { Chooser } from "./chooser";
 
 @Injectable()
-export class Oracle {
+export class Oracle implements Chooser<string> {
   choose(): Choice<string> {
     return RandomFromList.choose(this.getChoices());
   }

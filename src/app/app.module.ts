@@ -11,6 +11,7 @@ import { OraclePage } from "../pages/oracle/oracle";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ParticlesDirective } from "../particles/particle.directive";
+import { AnswerComponent } from "../components/answer/answer.component";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ParticlesDirective } from "../particles/particle.directive";
     OraclePage,
     TabsPage,
     ParticlesDirective,
+    AnswerComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ParticlesDirective } from "../particles/particle.directive";
     ContactPage,
     HomePage,
     OraclePage,
-    TabsPage
+    TabsPage,
+    AnswerComponent,
   ],
   providers: [
     StatusBar,
