@@ -1,9 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Oracolo</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="choose($event, answerElem)">
+        Rispondi
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  {{choose.value}}
+<ion-content padding class="rm-particles">
+  <div class="response-wrapper">
+    <div text-center #answerElem class="rm-particles-response">
+      {{choice.value}}
+    </div>
+  </div>
 </ion-content>

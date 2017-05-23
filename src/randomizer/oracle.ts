@@ -1,12 +1,14 @@
 import { Choice } from "./models/choice";
 import { RandomFromList } from "./list";
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class Oracle {
-  static choose(): Choice<string> {
+  choose(): Choice<string> {
     return RandomFromList.choose(this.getChoices());
   }
 
-  static getChoices(): Array<Choice<string>> {
+  getChoices(): Array<Choice<string>> {
     return [{ "label": "I segnali indicano sì." },
     { "label": "Sì." },
     { "label": "Senza dubbio." },
