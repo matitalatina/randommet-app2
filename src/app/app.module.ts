@@ -15,6 +15,7 @@ import { ParticlesDirective } from "../particles/particle.directive";
 import { AnswerComponent } from "../components/answer/answer.component";
 import { PersistentChoiceList } from "../randomizer/persistent-choice-list.service";
 import { ListEditPage } from "../pages/list-edit/list-edit.component";
+import { ListAnswerPage } from "../pages/list-answer/list-answer.component";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ListEditPage } from "../pages/list-edit/list-edit.component";
     ParticlesDirective,
     AnswerComponent,
     ListEditPage,
+    ListAnswerPage,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { ListEditPage } from "../pages/list-edit/list-edit.component";
     TabsPage,
     AnswerComponent,
     ListEditPage,
+    ListAnswerPage,
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Scelta</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="choose($event)">
+        Riscegli
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <rm-answer [chosenValue]="choice.value"></rm-answer>
+</ion-content>
