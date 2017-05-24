@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Lista</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToAnswer($event)">
+        Scegli
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar>
+    <form (ngSubmit)="addChoice($event)">
+      <ion-input [(ngModel)]="choiceValue" placeholder="Inserisci elemento" name="choiceValue"></ion-input>
+    </form>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="addChoice($event)">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let choice of list">
+      <button ion-item>
+        {{ choice.label }}
+      </button>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

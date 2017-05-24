@@ -1,0 +1,11 @@
+.rm-particles-response {
+  color: lighten(map-get($colors, primary), 80%);
+  font-size: 25px;
+}
+
+.response-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
