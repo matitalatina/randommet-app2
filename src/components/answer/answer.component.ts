@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Chooser } from "../../randomizer/chooser";
 
+declare var $: any;
+
 @Component({
   selector: 'rm-answer',
   templateUrl: 'answer.html'

@@ -11,7 +11,7 @@ export class ParticlesDirective {
     const randomNumber = random(0, 100000);
     const particleId = 'particles-js' + randomNumber;
     el.nativeElement.setAttribute('id', particleId);
-    particlesJS.load(particleId, 'resources/particles.config.json');
+    particlesJS.load(particleId, 'assets/particles.config.json');
   }
 
 }
